@@ -1,0 +1,1 @@
+../../../../../.blueprint/extensions/slate/wrappers/admin.blade.php
