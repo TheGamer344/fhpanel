@@ -140,3 +140,20 @@ Route::group([
         Route::put('/docker-image', [Client\Servers\SettingsController::class, 'dockerImage']);
     });
 });
+
+/*
+|--------------------------------------------------------------------------
+| Free Servers Control API
+|--------------------------------------------------------------------------
+|
+| Endpoint: /api/freeservers
+|
+*/
+Route::group(['prefix' => '/freeservers'], function () {
+    Route::get('/', [Client\FreeServersController::class, 'index']);
+    Route::get('/{uuid}/info', [Client\FreeServersController::class, 'info']);
+
+    Route::post('/create', [Client\FreeServersController::class, 'create']);
+    Route::post('/{uuid}/renew', [Client\FreeServersController::class, 'renew']);
+    Route::post('/{uuid}/delete', [Client\FreeServersController::class, 'delete']);
+});
