@@ -226,3 +226,20 @@ Route::group(['prefix' => 'nests'], function () {
     Route::delete('/egg/{egg:id}', [Admin\Nests\EggController::class, 'destroy']);
     Route::delete('/egg/{egg:id}/variables/{variable:id}', [Admin\Nests\EggVariableController::class, 'destroy']);
 });
+
+/*
+|--------------------------------------------------------------------------
+| Updater Routes
+|--------------------------------------------------------------------------
+|
+| Endpoint: /admin/updater
+| Copyright (c) 2024 it's vic! All Rights Reserved.
+*/
+Route::group(['prefix' => 'updater'], function () {
+    Route::get('/', [Admin\UpdaterController::class, 'index'])->name('admin.updater');
+    Route::get('/log', [Admin\UpdaterController::class, 'log'])->name('admin.updater.log');
+
+    Route::post('/', [Admin\UpdaterController::class, 'update']);
+    Route::post('/restore', [Admin\UpdaterController::class, 'restore'])->name('admin.updater.restore');
+});
+
