@@ -11,7 +11,7 @@
     "\n%cData:         %c/var/www/pterodactyl/.blueprint/extensions/nebula/private"+
     "\n%cPublic:       %c/var/www/pterodactyl/.blueprint/extensions/nebula/public"+
     "\n%cType:         %clocal"+
-    "\n%cTimestamp:    %c1729211835"+
+    "\n%cTimestamp:    %c1729217499"+
       "\n ",
 
       'color: #3bb4f9; font-weight: 900',

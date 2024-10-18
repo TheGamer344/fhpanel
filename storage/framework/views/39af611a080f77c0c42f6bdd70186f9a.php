@@ -1,83 +1,83 @@
 <!-- Import scripts. -->
 <?php if(Auth::check()): ?>
-  <script src="/extensions/nebula/libraries/fetchStyle.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/currentPage.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/fetchServerId.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/statusOrb.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/customContextMenu.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/copyapi.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/assignElementIds.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/fileMode.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/insertAboveApp.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/sidebarMiddleClick.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/viewportVisibility.js?1729211835"></script>
-  <script src="/extensions/nebula/libraries/floatingWindows.js?1729211835"></script>
-  <?php if($n_keyboard_shortcuts == "1"): ?><script src="/extensions/nebula/libraries/keybinds.js?1729211835"></script><?php endif; ?>
-  <?php if($n_keyboard_shortcuts == "1"): ?><script src="/extensions/nebula/libraries/keybindsModal.js?1729211835"></script><?php endif; ?>
-  <?php if($n_alert == "1"): ?><script src="https://cdn.nebula.style/modules/marked/marked.min.js?1729211835" crossorigin="anonymous"></script><?php endif; ?>
+  <script src="/extensions/nebula/libraries/fetchStyle.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/currentPage.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/fetchServerId.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/statusOrb.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/customContextMenu.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/copyapi.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/assignElementIds.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/fileMode.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/insertAboveApp.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/sidebarMiddleClick.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/viewportVisibility.js?1729217499"></script>
+  <script src="/extensions/nebula/libraries/floatingWindows.js?1729217499"></script>
+  <?php if($n_keyboard_shortcuts == "1"): ?><script src="/extensions/nebula/libraries/keybinds.js?1729217499"></script><?php endif; ?>
+  <?php if($n_keyboard_shortcuts == "1"): ?><script src="/extensions/nebula/libraries/keybindsModal.js?1729217499"></script><?php endif; ?>
+  <?php if($n_alert == "1"): ?><script src="https://cdn.nebula.style/modules/marked/marked.min.js?1729217499" crossorigin="anonymous"></script><?php endif; ?>
   <script src="/extensions/nebula/libraries/assets/popper.min.js"></script>
   <script src="/extensions/nebula/libraries/assets/tippy-bundle.umd.min.js"></script>
 <?php endif; ?>
-<script src="/extensions/nebula/libraries/errorHandler.js?1729211835"></script>
-<script src="/extensions/nebula/libraries/locationchange.js?1729211835"></script>
-<script src="https://cdn.nebula.style/modules/dart.js?791"></script>
+<script src="/extensions/nebula/libraries/errorHandler.js?1729217499"></script>
+<script src="/extensions/nebula/libraries/locationchange.js?1729217499"></script>
+<script src="https://cdn.nebula.style/modules/dart.js?14301"></script>
 <?php if($blueprint->dbGet("nebula", "plausible_tracking") == 1) { echo('<script defer="" data-domain="demo.nebula.style" src="https://plausible.prpl.wtf/js/script.js"></script>'); } ?>
 
 <!-- Import stylesheets. -->
 <style>
-  @import url("/extensions/nebula/libraries/statusOrb.css?1729211835");
-  @import url("/extensions/nebula/libraries/fixUserInterfaceBugs.css?1729211835");
-  @import url("/extensions/nebula/libraries/customContextMenu.css?1729211835");
-  @import url("/extensions/nebula/libraries/fileMode.css?1729211835");
-  @import url("/extensions/nebula/libraries/borderRadius.css?1729211835");
-  @import url("/extensions/nebula/libraries/extendedStyles.css?1729211835");
-  @import url("/extensions/nebula/libraries/tagStyling.css?1729211835");
-  @import url("/extensions/nebula/libraries/floatingWindows.css?1729211835");
-  @import url("/extensions/nebula/libraries/patterns.css?1729211835");
-  @import url("/extensions/nebula/libraries/animations.css?1729211835");
+  @import url("/extensions/nebula/libraries/statusOrb.css?1729217499");
+  @import url("/extensions/nebula/libraries/fixUserInterfaceBugs.css?1729217499");
+  @import url("/extensions/nebula/libraries/customContextMenu.css?1729217499");
+  @import url("/extensions/nebula/libraries/fileMode.css?1729217499");
+  @import url("/extensions/nebula/libraries/borderRadius.css?1729217499");
+  @import url("/extensions/nebula/libraries/extendedStyles.css?1729217499");
+  @import url("/extensions/nebula/libraries/tagStyling.css?1729217499");
+  @import url("/extensions/nebula/libraries/floatingWindows.css?1729217499");
+  @import url("/extensions/nebula/libraries/patterns.css?1729217499");
+  @import url("/extensions/nebula/libraries/animations.css?1729217499");
 
   <?php if($n_server_list == "cards"): ?>
-    @import url("/extensions/nebula/libraries/serversCards.css?1729211835");
+    @import url("/extensions/nebula/libraries/serversCards.css?1729217499");
   <?php else: ?>
-    @import url("/extensions/nebula/libraries/serversList.css?1729211835");
+    @import url("/extensions/nebula/libraries/serversList.css?1729217499");
   <?php endif; ?>
 
   <?php if($n_keyboard_shortcuts == "1"): ?>
-    @import url("/extensions/nebula/libraries/keybindsModal.css?1729211835");
+    @import url("/extensions/nebula/libraries/keybindsModal.css?1729217499");
   <?php endif; ?>
 
   <?php if($n_server_overview_graphs == "0"): ?>
-    @import url("/extensions/nebula/libraries/hideServerOverviewGraphs.css?1729211835");
+    @import url("/extensions/nebula/libraries/hideServerOverviewGraphs.css?1729217499");
   <?php endif; ?>
 
   <?php if($n_dashboard_transparency != "0"): ?>
-    @import url("/extensions/nebula/libraries/transparentUI.css?1729211835");
-    @import url("/extensions/nebula/libraries/extendedStylesTransparency.css?1729211835");
+    @import url("/extensions/nebula/libraries/transparentUI.css?1729217499");
+    @import url("/extensions/nebula/libraries/extendedStylesTransparency.css?1729217499");
   <?php endif; ?>
 
   <?php if($n_sidebar_hover_tooltip == "1"): ?>
-    @import url("/extensions/nebula/libraries/sidebarTooltip.css?1729211835");
+    @import url("/extensions/nebula/libraries/sidebarTooltip.css?1729217499");
   <?php endif; ?>
 
   <?php if($n_website_links == "1"): ?>
-    @import url("/extensions/nebula/libraries/weblinks.css?1729211835");
+    @import url("/extensions/nebula/libraries/weblinks.css?1729217499");
   <?php endif; ?>
 
   <?php if($n_alert == "1"): ?>
-    @import url("/extensions/nebula/libraries/alert.css?1729211835");
+    @import url("/extensions/nebula/libraries/alert.css?1729217499");
   <?php endif; ?>
 
   <?php if($n_watermark_auth != "0"): ?>
-    @import url("/extensions/nebula/libraries/authWatermark.css?1729211835");
+    @import url("/extensions/nebula/libraries/authWatermark.css?1729217499");
   <?php endif; ?>
 
   <?php if($blueprint->dbGet("settings", "recaptcha:enabled") == "true"): ?>
-    @import url("/extensions/nebula/libraries/recaptcha.css?1729211835");
+    @import url("/extensions/nebula/libraries/recaptcha.css?1729217499");
   <?php endif; ?>
 
   <?php if(!Auth::check()): ?>
-    @import url("/extensions/nebula/libraries/hideRecaptcha.css?1729211835");
-    @import url("/extensions/nebula/libraries/extendedStylesAuth.css?1729211835");
+    @import url("/extensions/nebula/libraries/hideRecaptcha.css?1729217499");
+    @import url("/extensions/nebula/libraries/extendedStylesAuth.css?1729217499");
   <?php endif; ?>
 
   <?php 

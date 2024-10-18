@@ -114,23 +114,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="box"> <!-- versionchanger -->
-                    <div class="box-header with-border"> <!-- versionchanger -->
-                        <h3 class="box-title">MCVAPI (Minecraft Version Changer) Softwares</h3> <!-- versionchanger -->
-                    </div> <!-- versionchanger -->
-                    <div class="box-body"> <!-- versionchanger -->
-                        <div class="row"> <!-- versionchanger -->
-                            <div class="form-group col-md-12"> <!-- versionchanger -->
-                                <label class="control-label">Softwares</label> <!-- versionchanger -->
-                                <div> <!-- versionchanger -->
-                                    <p>Choices: <?php echo e(Cache::remember('mcvapi:types', 600, function () { try { return implode(', ', array_keys(json_decode(Http::get('https://versions.mcjars.app/api/v1/types')->body(), true)['types'])); } catch (\Exception $e) { return 'unknown'; } })); ?></p> <!-- versionchanger -->
-                                    <input class="form-control" name="mcvapi:types" value="<?php echo e(old('mcvapi:types', DB::table('settings')->where('key', '=', 'settings::mcvapi:types')->first()?->value ?? Cache::get('mcvapi:types'))); ?>"> <!-- versionchanger -->
-                                    <p class="text-muted small">Enter softwares in the order you want them displayed.</p> <!-- versionchanger -->
-                                </div> <!-- versionchanger -->
-                            </div> <!-- versionchanger -->
-                        </div> <!-- versionchanger -->
-                    </div> <!-- versionchanger -->
-                </div> <!-- versionchanger -->
                 <div class="box box-primary">
                     <div class="box-footer">
                         <?php echo e(csrf_field()); ?>

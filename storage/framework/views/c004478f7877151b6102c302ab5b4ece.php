@@ -1,5 +1,5 @@
 <?php if($n_init != "2.0-1"): ?>
-  <style class="init-error-style">@import url("/extensions/nebula/libraries/initStyles.css?t=1729211835");</style>
+  <style class="init-error-style">@import url("/extensions/nebula/libraries/initStyles.css?t=1729217499");</style>
   <?php if(Auth::check() != true): ?>
     <?php echo $__env->make('blueprint.extensions.nebula.wrapper.initialize.auth', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
   <?php else: ?>

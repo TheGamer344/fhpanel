@@ -1,6 +1,6 @@
 import React from 'react';
 
-/* blueprint/import *//* VersionchangerImportStart */import VersionchangerCmhlzslndb from '@/blueprint/extensions/versionchanger/VersionChangerContainer';/* VersionchangerImportEnd */
+/* blueprint/import *//* VersionchangerImportStart */import VersionchangerLnmbvresnr from '@/blueprint/extensions/versionchanger/VersionChangerContainer';/* VersionchangerImportEnd */
 
 interface RouteDefinition {
   path: string;
@@ -23,6 +23,6 @@ export default {
     /* routes/account *//* VersionchangerAccountRouteStart *//* VersionchangerAccountRouteEnd */
   ],
   server: [
-    /* routes/server *//* VersionchangerServerRouteStart */{ path: '/minecraft/versions', permission: 'file.update', name: 'Versions', component: VersionchangerCmhlzslndb, adminOnly: false, identifier: 'versionchanger' },/* VersionchangerServerRouteEnd */
+    /* routes/server *//* VersionchangerServerRouteStart */{ path: '/minecraft/versions', permission: 'file.update', name: 'Versions', component: VersionchangerLnmbvresnr, adminOnly: false, identifier: 'versionchanger' },/* VersionchangerServerRouteEnd */
   ],
 } as Routes;

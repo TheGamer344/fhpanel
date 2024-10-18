@@ -21,7 +21,16 @@ Route::group(['prefix' => 'extensions/blueprint'], function () {
 
   /* Extension permissions endpoint */
   Route::patch('/config', [Pterodactyl\BlueprintFramework\Controllers\ExtensionConfigurationController::class, 'update']);
-});// nebula:start
+});// slate:start
+Route::group(['prefix' => 'extensions/slate'], function () {
+    Route::get('/', [Admin\Extensions\slate\slateExtensionController::class, 'index'])->name('admin.extensions.slate.index');
+    Route::patch('/', [Admin\Extensions\slate\slateExtensionController::class, 'update'])->name('admin.extensions.slate.patch');
+    Route::post('/', [Admin\Extensions\slate\slateExtensionController::class, 'post'])->name('admin.extensions.slate.post');
+    Route::put('/', [Admin\Extensions\slate\slateExtensionController::class, 'put'])->name('admin.extensions.slate.put');
+    Route::delete('/{target}/{id}', [Admin\Extensions\slate\slateExtensionController::class, 'delete'])->name('admin.extensions.slate.delete');
+});
+// slate:stop
+// nebula:start
 Route::group(['prefix' => 'extensions/nebula'], function () {
     Route::get('/', [Admin\Extensions\nebula\nebulaExtensionController::class, 'index'])->name('admin.extensions.nebula.index');
     Route::patch('/', [Admin\Extensions\nebula\nebulaExtensionController::class, 'update'])->name('admin.extensions.nebula.patch');
@@ -39,12 +48,3 @@ Route::group(['prefix' => 'extensions/versionchanger'], function () {
     Route::delete('/{target}/{id}', [Admin\Extensions\versionchanger\versionchangerExtensionController::class, 'delete'])->name('admin.extensions.versionchanger.delete');
 });
 // versionchanger:stop
-// slate:start
-Route::group(['prefix' => 'extensions/slate'], function () {
-    Route::get('/', [Admin\Extensions\slate\slateExtensionController::class, 'index'])->name('admin.extensions.slate.index');
-    Route::patch('/', [Admin\Extensions\slate\slateExtensionController::class, 'update'])->name('admin.extensions.slate.patch');
-    Route::post('/', [Admin\Extensions\slate\slateExtensionController::class, 'post'])->name('admin.extensions.slate.post');
-    Route::put('/', [Admin\Extensions\slate\slateExtensionController::class, 'put'])->name('admin.extensions.slate.put');
-    Route::delete('/{target}/{id}', [Admin\Extensions\slate\slateExtensionController::class, 'delete'])->name('admin.extensions.slate.delete');
-});
-// slate:stop

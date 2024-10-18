@@ -42,15 +42,15 @@
       </a>
     </div>
 
-    <!--@nebula:s@-->
+    <!--@slate:s@-->
+<?php echo $__env->make("blueprint.admin.entry", ['EXTENSION_ID' => 'slate', 'EXTENSION_NAME' => 'Slate', 'EXTENSION_VERSION' => '1.0', 'EXTENSION_ICON' => '/assets/extensions/slate/icon.jpg'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<!--@slate:e@-->
+<!--@nebula:s@-->
 <?php echo $__env->make("blueprint.admin.entry", ['EXTENSION_ID' => 'nebula', 'EXTENSION_NAME' => 'Nebula', 'EXTENSION_VERSION' => '2.0-1', 'EXTENSION_ICON' => '/assets/extensions/nebula/icon.jpg'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!--@nebula:e@-->
 <!--@versionchanger:s@-->
 <?php echo $__env->make("blueprint.admin.entry", ['EXTENSION_ID' => 'versionchanger', 'EXTENSION_NAME' => 'Minecraft Version Changer', 'EXTENSION_VERSION' => '1.1.1', 'EXTENSION_ICON' => '/assets/extensions/versionchanger/icon.jpg'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <!--@versionchanger:e@-->
-<!--@slate:s@-->
-<?php echo $__env->make("blueprint.admin.entry", ['EXTENSION_ID' => 'slate', 'EXTENSION_NAME' => 'Slate', 'EXTENSION_VERSION' => '1.0', 'EXTENSION_ICON' => '/assets/extensions/slate/icon.jpg'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<!--@slate:e@-->
 <!-- [entryplaceholder] -->
 
   <?php else: ?> 

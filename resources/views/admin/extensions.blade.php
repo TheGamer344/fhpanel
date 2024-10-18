@@ -41,15 +41,15 @@
       </a>
     </div>
 
-    <!--@nebula:s@-->
+    <!--@slate:s@-->
+@include("blueprint.admin.entry", ['EXTENSION_ID' => 'slate', 'EXTENSION_NAME' => 'Slate', 'EXTENSION_VERSION' => '1.0', 'EXTENSION_ICON' => '/assets/extensions/slate/icon.jpg'])
+<!--@slate:e@-->
+<!--@nebula:s@-->
 @include("blueprint.admin.entry", ['EXTENSION_ID' => 'nebula', 'EXTENSION_NAME' => 'Nebula', 'EXTENSION_VERSION' => '2.0-1', 'EXTENSION_ICON' => '/assets/extensions/nebula/icon.jpg'])
 <!--@nebula:e@-->
 <!--@versionchanger:s@-->
 @include("blueprint.admin.entry", ['EXTENSION_ID' => 'versionchanger', 'EXTENSION_NAME' => 'Minecraft Version Changer', 'EXTENSION_VERSION' => '1.1.1', 'EXTENSION_ICON' => '/assets/extensions/versionchanger/icon.jpg'])
 <!--@versionchanger:e@-->
-<!--@slate:s@-->
-@include("blueprint.admin.entry", ['EXTENSION_ID' => 'slate', 'EXTENSION_NAME' => 'Slate', 'EXTENSION_VERSION' => '1.0', 'EXTENSION_ICON' => '/assets/extensions/slate/icon.jpg'])
-<!--@slate:e@-->
 <!-- [entryplaceholder] -->
 
   @else 
