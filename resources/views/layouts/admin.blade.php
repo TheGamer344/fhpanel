@@ -85,6 +85,11 @@
                                 <i class="fa fa-gamepad"></i> <span>Application API</span>
                             </a>
                         </li>
+                        <li class="{{ Route::currentRouteName() !== 'admin.updater' ?: 'active' }}">
+                            <a href="{{ route('admin.updater') }}">
+                                <i class="fa fa-refresh"></i> <span>Updater</span>
+                            </a>
+                        </li>
                         <li class="header">MANAGEMENT</li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.databases') ?: 'active' }}">
                             <a href="{{ route('admin.databases') }}">
