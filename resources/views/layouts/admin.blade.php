@@ -93,6 +93,11 @@
                             </a>
                         </li>
                         <li class="header">MANAGEMENT</li>
+                        <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.freeservers') ?: 'active' }}">
+	<a href="{{ route('admin.freeservers') }}">
+		<i class="fa fa-calendar"></i> <span>Free Servers</span>
+	</a>
+</li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.databases') ?: 'active' }}">
                             <a href="{{ route('admin.databases') }}">
                                 <i class="fa fa-database"></i> <span>Databases</span>
