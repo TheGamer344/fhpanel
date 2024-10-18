@@ -6,6 +6,7 @@ import ResetPasswordContainer from '@/components/auth/ResetPasswordContainer';
 import LoginCheckpointContainer from '@/components/auth/LoginCheckpointContainer';
 import { NotFound } from '@/components/elements/ScreenBlock';
 import { useHistory, useLocation } from 'react-router';
+import RegisterContainer from '@/components/auth/RegisterContainer';
 
 export default () => {
     const history = useHistory();
