@@ -20,6 +20,7 @@ export default () => {
                 <Route path={`${path}/login/checkpoint`} component={LoginCheckpointContainer} />
                 <Route path={`${path}/password`} component={ForgotPasswordContainer} exact />
                 <Route path={`${path}/password/reset/:token`} component={ResetPasswordContainer} />
+                <Route path={`${path}/register`} component={RegisterContainer} exact/>
                 <Route path={`${path}/checkpoint`} />
                 <Route path={'*'}>
                     <NotFound onBack={() => history.push('/auth/login')} />
