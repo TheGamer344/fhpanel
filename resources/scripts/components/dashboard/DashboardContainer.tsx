@@ -12,13 +12,15 @@ import tw from 'twin.macro';
 import useSWR from 'swr';
 import { PaginatedResult } from '@/api/http';
 import Pagination from '@/components/elements/Pagination';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 
 import BeforeContent from '@/blueprint/components/Dashboard/BeforeContent';
-import AfterContent  from '@/blueprint/components/Dashboard/AfterContent';
+import AfterContent from '@/blueprint/components/Dashboard/AfterContent';
+import Button from '@/components/elements/Button';
 
 export default () => {
     const { search } = useLocation();
+    const history = useHistory();
     const defaultPage = Number(new URLSearchParams(search).get('page') || '1');
 
     const [page, setPage] = useState(!isNaN(defaultPage) && defaultPage > 0 ? defaultPage : 1);
@@ -40,9 +42,6 @@ export default () => {
     }, [servers?.pagination.currentPage]);
 
     useEffect(() => {
-        // Don't use react-router to handle changing this part of the URL, otherwise it
-        // triggers a needless re-render. We just want to track this in the URL incase the
-        // user refreshes the page.
         window.history.replaceState(null, document.title, `/${page <= 1 ? '' : `?page=${page}`}`);
     }, [page]);
 
@@ -51,9 +50,17 @@ export default () => {
         if (!error) clearFlashes('dashboard');
     }, [error]);
 
+    const handleFreeServerRedirect = () => {
+        history.push('/freeservers');
+    };
+
     return (
         <PageContentBlock title={'Dashboard'} showFlashKey={'dashboard'}>
             <BeforeContent />
+            {/* Get Free Server Button */}
+            <div css={tw`mb-4 flex justify-end`}>
+                <Button onClick={handleFreeServerRedirect}>Get Free Server</Button>
+            </div>
             {rootAdmin && (
                 <div css={tw`mb-2 flex justify-end items-center`}>
                     <p css={tw`uppercase text-xs text-neutral-400 mr-2`}>
