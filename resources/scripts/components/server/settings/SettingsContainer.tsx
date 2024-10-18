@@ -25,6 +25,10 @@ export default () => {
     const node = ServerContext.useStoreState((state) => state.server.data!.node);
     const sftp = ServerContext.useStoreState((state) => state.server.data!.sftpDetails, isEqual);
 
+    if (sftp.ip === 'node1.flaminghosting.net') {
+    sftp.ip = 'sftp1.flaminghosting.net';
+}
+
     return (
         <ServerContentBlock title={'Settings'}>
             <FlashMessageRender byKey={'settings'} css={tw`mb-4`} />
