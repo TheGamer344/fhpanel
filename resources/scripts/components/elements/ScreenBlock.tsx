@@ -7,6 +7,7 @@ import tw from 'twin.macro';
 import Button from '@/components/elements/Button';
 import NotFoundSvg from '@/assets/images/not_found.svg';
 import ServerErrorSvg from '@/assets/images/server_error.svg';
+import RenewBox from '@/components/dashboard/freeservers/RenewBox';
 
 interface BaseProps {
     title: string;
@@ -61,6 +62,11 @@ const ScreenBlock = ({ title, image, message, onBack, onRetry }: ScreenBlockProp
                 <p css={tw`text-sm text-neutral-700 mt-2`}>{message}</p>
             </div>
         </div>
+        <div css={tw`flex justify-center`}>
+	<div css={tw`pt-4 w-full lg:w-1/2`}>
+		<RenewBox />
+	</div>
+</div>
     </PageContentBlock>
 );
 
