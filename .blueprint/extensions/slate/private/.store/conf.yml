@@ -1,0 +1,27 @@
+info:
+  name: "Slate"
+  identifier: "slate"
+  description: "Admin theming, done right."
+  flags: "hasInstallScript"
+  version: "1.0"
+  target: "alpha-NLM"
+  author: "prplwtf"
+  icon: "public/assets/slate.jpg"
+  website: ""
+
+admin:
+  view: "admin/admin.blade.php"
+  controller: ""
+  css: "admin/admin.base.css"
+  wrapper: "admin/wrapper.blade.php"
+
+dashboard:
+  wrapper: ""
+  css: ""
+
+data:
+  directory: "private"
+  public: "public"
+
+database:
+  migrations: ""

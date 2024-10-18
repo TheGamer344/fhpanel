@@ -1,0 +1,1 @@
+/* SlateStart */ 'blueprint:slate' => [ 'driver' => 'local', 'root' => storage_path('extensions/slate'), 'url' => env('APP_URL') . '/fs/extensions/slate', 'visibility' => 'public', 'throw' => false, ], /* SlateEnd */

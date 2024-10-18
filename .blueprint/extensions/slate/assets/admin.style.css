@@ -1,0 +1,16 @@
+@import url("/extensions/slate/theme/theme.css");
+
+/* overflow utility classes */
+.ov-h  { overflow:   hidden !important }
+.ov-a  { overflow:   auto   !important }
+.ov-s  { overflow:   scroll !important }
+.ovx-h { overflow-x: hidden !important }
+.ovx-a { overflow-x: auto   !important }
+.ovx-s { overflow-x: scroll !important }
+.ovy-h { overflow-y: hidden !important }
+.ovy-a { overflow-y: auto   !important }
+.ovy-s { overflow-y: scroll !important }
+
+/* Colorbox element for color scheme previews. */
+.cbox { height: 40px; transition: background-color .35s ease-in-out; }
+.cbox:hover { background-color: #00000000; }

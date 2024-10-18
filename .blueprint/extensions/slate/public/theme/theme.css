@@ -1,0 +1,82 @@
+@import url("./pterodactyl.css");
+@import url("./icons.css");
+@import url("../assets/bootstrap-icons/bootstrap-icons.css");
+
+/* Color scheme options */
+:root {
+  --BG: #1d1f21;
+  --FG: #c5c8c6;
+
+  --A:  #282a2e;
+  --B:  #373b41;
+  --C:  #a54242;
+  --D:  #cc6666;
+  --E:  #409447;
+  --F:  #79bd68;
+  --G:  #de935f;
+  --H:  #f0c674;
+  --I:  #5f819d;
+  --J:  #81a2be;
+  --K:  #85678f;
+  --L:  #b294bb;
+  --M:  #5e8d87;
+  --N:  #8abeb7;
+  --O:  #707880;
+  --P:  #c5c8c6;
+  --Q:  #09090b;
+  --R:  #18181b;
+}
+
+/* Color scheme background utility classes */
+.bg    { background-color: var(--BG) }
+.bg-fg { background-color: var(--FG) }
+.bg-0  { background-color: var(--A)  }
+.bg-1  { background-color: var(--B)  }
+.bg-2  { background-color: var(--C)  }
+.bg-3  { background-color: var(--D)  }
+.bg-4  { background-color: var(--E)  }
+.bg-5  { background-color: var(--F)  }
+.bg-6  { background-color: var(--G)  }
+.bg-7  { background-color: var(--H)  }
+.bg-8  { background-color: var(--I)  }
+.bg-9  { background-color: var(--J)  }
+.bg-10 { background-color: var(--K)  }
+.bg-11 { background-color: var(--L)  }
+.bg-12 { background-color: var(--M)  }
+.bg-13 { background-color: var(--N)  }
+.bg-14 { background-color: var(--O)  }
+.bg-15 { background-color: var(--P)  }
+.bg-16 { background-color: var(--Q)  }
+.bg-17 { background-color: var(--R)  }
+
+/* Color scheme color utility classes */
+.c-bg { color: var(--BG) }
+.c    { color: var(--FG) }
+.c-0  { color: var(--A)  }
+.c-1  { color: var(--B)  }
+.c-2  { color: var(--C)  }
+.c-3  { color: var(--D)  }
+.c-4  { color: var(--E)  }
+.c-5  { color: var(--F)  }
+.c-6  { color: var(--G)  }
+.c-7  { color: var(--H)  }
+.c-8  { color: var(--I)  }
+.c-9  { color: var(--J)  }
+.c-10 { color: var(--K)  }
+.c-11 { color: var(--L)  }
+.c-12 { color: var(--M)  }
+.c-13 { color: var(--N)  }
+.c-14 { color: var(--O)  }
+.c-15 { color: var(--P)  }
+.c-16 { color: var(--Q)  }
+.c-17 { color: var(--R)  }
+
+/* Text color utility classes */
+.text         { color: var(--FG) }
+.text-dark    { color: var(--B)  }
+.text-danger  { color: var(--D)  }
+.text-success { color: var(--F)  }
+.text-warning { color: var(--H)  }
+.text-primary { color: var(--J)  }
+.text-info    { color: var(--L)  }
+.text-gray    { color: var(--O)  }

@@ -1,0 +1,255 @@
+[1m[2m2024-10-18 00:35:40(B[m [34mINFO:(B[m Searching and validating framework dependencies..
+[1m[2m2024-10-18 00:35:40(B[m [34mINFO:(B[m Placing Blueprint command shortcut..
+[1m[2m2024-10-18 00:35:40(B[m [34mINFO:(B[m Linking directories and filesystems..
+ln: failed to create symbolic link '/var/www/pterodactyl/public/extensions/blueprint': File exists
+ln: failed to create symbolic link '/var/www/pterodactyl/public/assets/extensions/blueprint': File exists
+
+   INFO  The [public/storage] link has been connected to [storage/app/public].  
+
+[1m[2m2024-10-18 00:35:41(B[m [35mINPUT:(B[m Would you like to put your application into maintenance while Blueprint is installing? (Y/n)
+[1m[2m2024-10-18 00:35:42(B[m [34mINFO:(B[m Putting application into maintenance has been skipped.
+[1m[2m2024-10-18 00:35:42(B[m [34mINFO:(B[m Flushing view, config and route cache..
+
+   INFO  Blade templates cached successfully.  
+
+
+   INFO  Configuration cached successfully.  
+
+
+   INFO  Route cache cleared successfully.  
+
+
+   INFO  Application cache cleared successfully.  
+
+Flushed Blueprint stylesheet and scripts cache.[1m[2m2024-10-18 00:35:44(B[m [34mINFO:(B[m Changing Pterodactyl file ownership to 'www-data:www-data'..
+chown: cannot dereference '/var/www/pterodactyl/storage/extensions/nebula': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/storage/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/storage/extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/app/BlueprintFramework/Extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/extensions/nebula': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/storage': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/assets/extensions/nebula': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/assets/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/assets/extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/fs/nebula': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/fs/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/fs/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/resources/scripts/blueprint/extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/resources/views/blueprint/extensions/nebula': No such file or directory
+[1m[2m2024-10-18 00:35:44(B[m [34mINFO:(B[m Rebuilding panel assets..
+[1m[2m2024-10-18 00:36:22(B[m [34mINFO:(B[m Syncing Blueprint-related database values..
+[1m[2m2024-10-18 00:36:23(B[m [35mINPUT:(B[m Would you like to migrate your database? (Y/n)
+[1m[2m2024-10-18 00:36:38(B[m [34mINFO:(B[m Database migrations have been skipped.
+[1m[2m2024-10-18 00:36:38(B[m [34mINFO:(B[m Validating update..
+[1m[2m2024-10-18 00:36:38(B[m [32mSUCCESS:(B[m Upgrade finished.
+[1m[2m2024-10-18 00:37:15(B[m [34mINFO:(B[m Searching and validating framework dependencies..
+[1m[2m2024-10-18 00:37:15(B[m [34mINFO:(B[m [34;mInstalling nebula...[0m [37m(1/1)[0m
+[1m[2m2024-10-18 00:37:15(B[m [34mINFO:(B[m Reading and assigning extension flags..
+[1m[2m2024-10-18 00:37:15(B[m [34mINFO:(B[m Writing extension placeholders..
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Cloning and linking views directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/resources/views/blueprint/extensions/nebula': File exists
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Cloning and linking public directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/public/extensions/nebula': File exists
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Cloning and linking private directory..
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Linking and writing assets directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/public/assets/extensions/nebula': File exists
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Cloning admin view..
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Cloning admin controller..
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Editing admin routes..
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Cloning and linking dashboard wrapper..
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Cloning and linking admin wrapper..
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Creating and linking extension filesystem..
+ln: failed to create symbolic link '/var/www/pterodactyl/storage/extensions/nebula': File exists
+ln: failed to create symbolic link '/var/www/pterodactyl/public/fs/nebula': File exists
+[1m[2m2024-10-18 00:37:17(B[m [34mINFO:(B[m Cleaning up build files..
+[1m[2m2024-10-18 00:37:17(B[m [33mWARNING:(B[m Extension uses a custom installation script, proceed with caution.
+[1m[2m2024-10-18 00:37:20(B[m [34mINFO:(B[m Adding 'nebula' to active extensions list..
+[1m[2m2024-10-18 00:37:20(B[m [34mINFO:(B[m Unsetting variables..
+[1m[2m2024-10-18 00:37:20(B[m [34mINFO:(B[m Finalizing transaction..
+[1m[2m2024-10-18 00:37:20(B[m [34mINFO:(B[m Linking filesystems..
+
+   INFO  The [public/storage] link has been connected to [storage/app/public].  
+
+[1m[2m2024-10-18 00:37:21(B[m [34mINFO:(B[m Flushing view, config and route cache..
+
+   INFO  Blade templates cached successfully.  
+
+
+   INFO  Configuration cached successfully.  
+
+
+   INFO  Route cache cleared successfully.  
+
+
+   INFO  Application cache cleared successfully.  
+
+Flushed Blueprint stylesheet and scripts cache.[1m[2m2024-10-18 00:37:22(B[m [34mINFO:(B[m Changing Pterodactyl file ownership to 'www-data:www-data'..
+chown: cannot dereference '/var/www/pterodactyl/storage/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/storage/extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/app/BlueprintFramework/Extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/storage': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/assets/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/assets/extensions/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/fs/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/fs/versionchanger': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/resources/scripts/blueprint/extensions/versionchanger': No such file or directory
+[1m[2m2024-10-18 00:37:23(B[m [32mSUCCESS:(B[m nebula has been installed.
+{"status":"ok"}[1m[2m2024-10-18 00:37:33(B[m [34mINFO:(B[m Searching and validating framework dependencies..
+[1m[2m2024-10-18 00:37:33(B[m [34mINFO:(B[m [34;mInstalling verisonchanger...[0m [37m(1/1)[0m
+[1m[2m2024-10-18 00:37:34(B[m [31mFATAL:(B[m verisonchanger.blueprint could not be found or detected.
+[1m[2m2024-10-18 00:37:39(B[m [34mINFO:(B[m Searching and validating framework dependencies..
+[1m[2m2024-10-18 00:37:39(B[m [34mINFO:(B[m [34;mInstalling versionchanger...[0m [37m(1/1)[0m
+[1m[2m2024-10-18 00:37:39(B[m [34mINFO:(B[m Reading and assigning extension flags..
+[1m[2m2024-10-18 00:37:39(B[m [34mINFO:(B[m Writing extension placeholders..
+[1m[2m2024-10-18 00:37:39(B[m [34mINFO:(B[m Cloning and linking controllers directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/app/BlueprintFramework/Extensions/versionchanger': File exists
+[1m[2m2024-10-18 00:37:39(B[m [34mINFO:(B[m Cloning and linking router files..
+rm: cannot remove '/var/www/pterodactyl/routes/blueprint/client/versionchanger.php': No such file or directory
+[1m[2m2024-10-18 00:37:39(B[m [34mINFO:(B[m Cloning and linking components directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/resources/scripts/blueprint/extensions/versionchanger': File exists
+[1m[2m2024-10-18 00:37:39(B[m [34mINFO:(B[m Linking navigation routes..
+NAME: Versions
+PATH: /minecraft/versions
+TYPE: server
+COMP: VersionChangerContainer
+IDEN: VersionchangerCmhlzslndb
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Cloning and linking public directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/public/extensions/versionchanger': File exists
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Cloning and linking private directory..
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Linking and writing assets directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/public/assets/extensions/versionchanger': File exists
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Cloning admin view..
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Cloning admin controller..
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Editing admin routes..
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Creating and linking extension filesystem..
+ln: failed to create symbolic link '/var/www/pterodactyl/storage/extensions/versionchanger': File exists
+ln: failed to create symbolic link '/var/www/pterodactyl/public/fs/versionchanger': File exists
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Cleaning up build files..
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Adding 'versionchanger' to active extensions list..
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Unsetting variables..
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Finalizing transaction..
+[1m[2m2024-10-18 00:37:40(B[m [34mINFO:(B[m Rebuilding panel assets..
+[1m[2m2024-10-18 00:38:19(B[m [34mINFO:(B[m Linking filesystems..
+
+   INFO  The [public/storage] link has been connected to [storage/app/public].  
+
+[1m[2m2024-10-18 00:38:19(B[m [34mINFO:(B[m Flushing view, config and route cache..
+
+   INFO  Blade templates cached successfully.  
+
+
+   INFO  Configuration cached successfully.  
+
+
+   INFO  Route cache cleared successfully.  
+
+
+   INFO  Application cache cleared successfully.  
+
+Flushed Blueprint stylesheet and scripts cache.[1m[2m2024-10-18 00:38:20(B[m [34mINFO:(B[m Changing Pterodactyl file ownership to 'www-data:www-data'..
+chown: cannot dereference '/var/www/pterodactyl/storage/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/storage': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/assets/extensions/slate': No such file or directory
+chown: cannot dereference '/var/www/pterodactyl/public/fs/slate': No such file or directory
+[1m[2m2024-10-18 00:38:21(B[m [32mSUCCESS:(B[m versionchanger has been installed.
+{"status":"ok"}[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Searching and validating framework dependencies..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m [34;mInstalling slate...[0m [37m(1/1)[0m
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Reading and assigning extension flags..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Writing extension placeholders..
+[1m[2m2024-10-18 00:39:03(B[m [33mWARNING:(B[m Slate is built for version alpha-NLM, but your version is beta-2024-08.
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Cloning and linking public directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/public/extensions/slate': File exists
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Cloning and linking private directory..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Linking and writing assets directory..
+ln: failed to create symbolic link '/var/www/pterodactyl/public/assets/extensions/slate': File exists
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Cloning and linking admin css..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Cloning admin view..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Cloning admin controller..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Editing admin routes..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Cloning and linking admin wrapper..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Creating and linking extension filesystem..
+ln: failed to create symbolic link '/var/www/pterodactyl/storage/extensions/slate': File exists
+ln: failed to create symbolic link '/var/www/pterodactyl/public/fs/slate': File exists
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Cleaning up build files..
+[1m[2m2024-10-18 00:39:03(B[m [33mWARNING:(B[m Extension uses a custom installation script, proceed with caution.
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Adding 'slate' to active extensions list..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Unsetting variables..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Finalizing transaction..
+[1m[2m2024-10-18 00:39:03(B[m [34mINFO:(B[m Linking filesystems..
+
+   INFO  The [public/storage] link has been connected to [storage/app/public].  
+
+[1m[2m2024-10-18 00:39:04(B[m [34mINFO:(B[m Flushing view, config and route cache..
+
+   INFO  Blade templates cached successfully.  
+
+
+   INFO  Configuration cached successfully.  
+
+
+   INFO  Route cache cleared successfully.  
+
+
+   INFO  Application cache cleared successfully.  
+
+Flushed Blueprint stylesheet and scripts cache.[1m[2m2024-10-18 00:39:06(B[m [34mINFO:(B[m Changing Pterodactyl file ownership to 'www-data:www-data'..
+chown: cannot dereference '/var/www/pterodactyl/public/storage': No such file or directory
+[1m[2m2024-10-18 00:39:06(B[m [32mSUCCESS:(B[m slate has been installed.
+{"status":"ok"}[1m[2m2024-10-18 01:50:49(B[m [33mWARNING:(B[m This is an advanced feature, only proceed if you know what you are doing.
+[1m[2m2024-10-18 01:50:49(B[m [34mINFO:(B[m Searching and validating framework dependencies..
+[1m[2m2024-10-18 01:50:50(B[m [34mINFO:(B[m Placing Blueprint command shortcut..
+[1m[2m2024-10-18 01:50:50(B[m [34mINFO:(B[m Linking directories and filesystems..
+ln: failed to create symbolic link '/var/www/pterodactyl/public/extensions/blueprint': File exists
+ln: failed to create symbolic link '/var/www/pterodactyl/public/assets/extensions/blueprint': File exists
+ln: failed to create symbolic link '/var/www/pterodactyl/.blueprint/lib': File exists
+
+In RouteFileRegistrar.php line 35:
+                                                                                                         
+  require(/var/www/pterodactyl/routes/api-client.php): Failed to open stream: No such file or directory  
+                                                                                                         
+
+[1m[2m2024-10-18 01:50:50(B[m [35mINPUT:(B[m Would you like to put your application into maintenance while Blueprint is installing? (Y/n)
+[1m[2m2024-10-18 01:50:53(B[m [34mINFO:(B[m Putting application into maintenance has been skipped.
+[1m[2m2024-10-18 01:50:53(B[m [34mINFO:(B[m Flushing view, config and route cache..
+
+In RouteFileRegistrar.php line 35:
+                                                                                                         
+  require(/var/www/pterodactyl/routes/api-client.php): Failed to open stream: No such file or directory  
+                                                                                                         
+
+
+In RouteFileRegistrar.php line 35:
+                                                                                                         
+  require(/var/www/pterodactyl/routes/api-client.php): Failed to open stream: No such file or directory  
+                                                                                                         
+
+
+In RouteFileRegistrar.php line 35:
+                                                                                                         
+  require(/var/www/pterodactyl/routes/api-client.php): Failed to open stream: No such file or directory  
+                                                                                                         
+
+
+In RouteFileRegistrar.php line 35:
+                                                                                                         
+  require(/var/www/pterodactyl/routes/api-client.php): Failed to open stream: No such file or directory  
+                                                                                                         
+
+
+In RouteFileRegistrar.php line 35:
+                                                                                                         
+  require(/var/www/pterodactyl/routes/api-client.php): Failed to open stream: No such file or directory  
+                                                                                                         
+
+[1m[2m2024-10-18 01:50:55(B[m [35mINPUT:(B[m Would you like to migrate your database? (Y/n)
+[1m[2m2024-10-18 01:50:56(B[m [34mINFO:(B[m Database migrations have been skipped.
+[1m[2m2024-10-18 01:50:56(B[m [34mINFO:(B[m Changing Pterodactyl file ownership to 'www-data:www-data'..
+chown: cannot dereference '/var/www/pterodactyl/public/storage': No such file or directory
+[1m[2m2024-10-18 01:50:56(B[m [34mINFO:(B[m Rebuilding panel assets..
+[1m[2m2024-10-18 01:51:22(B[m [34mINFO:(B[m Syncing Blueprint-related database values..
+[1m[2m2024-10-18 01:51:22(B[m [32mSUCCESS:(B[m Blueprint has completed its installation process.

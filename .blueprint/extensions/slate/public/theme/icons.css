@@ -1,0 +1,37 @@
+/* This replaces some FontAwesome/Ion icons with Bootstrap ones. */
+
+
+
+/* font"awesome" */
+.fa.fa-home::before { content: "\F424" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-wrench::before { content: "\F790" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-gamepad::before { content: "\F448" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-database::before { content: "\F8BE" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-globe::before { content: "\F882" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-sitemap::before { content: "\F40B" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-server::before { content: "\F410" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-users::before { content: "\F4CF" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-magic::before { content: "\F675" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-th-large::before { content: "\F7BF" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-puzzle-piece::before { content: "\F502" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-sign-out::before { content: "\F307" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-user::before { content: "\F8A2" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-codepen::before { content: "\F40B" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-heartbeat::before { content: "\F26A" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-heart-o::before { content: "\F622" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-lock::before { content: "\F47A" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-unlock::before { content: "\F5FF" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-wrench::before { content: "\F790" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-power-off::before { content: "\F770" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-trash-o::before { content: "\F78A" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-eye::before { content: "\F33E" !important; font-family: "bootstrap-icons" !important }
+.fa.fa-eye-slash::before { content: "\F340" !important; font-family: "bootstrap-icons" !important }
+
+/* ionic */
+.ion.ion-ios-folder-outline::before { content: "\F6F9" !important; font-family: "bootstrap-icons" !important }
+.ion.ion-ios-barcode-outline::before { content: "\F6E3" !important; font-family: "bootstrap-icons" !important }
+.ion.ion-social-buffer-outline::before { content: "\F2ED" !important; font-family: "bootstrap-icons" !important }
+
+.ion.ion-ios-folder-outline,
+.ion.ion-ios-barcode-outline,
+.ion.ion-social-buffer-outline { line-height: 82.5px; margin-top: 10%; }

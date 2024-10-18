@@ -1,0 +1,365 @@
+.wrapper, .main-header, .navbar, .logo { background: hex(var(--BG)) !important; background-color: var(--BG) !important; box-shadow: none !important; }
+.main-sidebar, .main-footer            { background: hex(var(--Q))  !important; background-color: var(--Q)  !important; box-shadow: none !important; }
+.content-wrapper                       { background: hex(var(--Q))  !important; background-color: var(--Q ) !important; box-shadow: none !important; }
+
+.main-header { border-bottom: hsla(0,0%,100%,.1) solid 1px !important }
+
+footer.main-footer { border-top: none; text-align: end }
+footer.main-footer > div.pull-right.small.text-gray { display: none }
+
+ul.sidebar-menu > li.header { display: none }
+ul.nav.navbar-nav > li.user-menu { display: none }
+ul.nav.navbar-nav > li a { transition: background-color .3s, color .3s }
+
+header.main-header a.logo {
+  text-align: start !important;
+  font-weight: 600 !important;
+}
+
+.sidebar ul.sidebar-menu { margin-top: 17.5px; padding-left: 7.5px; padding-right: 7.5px }
+.content-header { margin-top: 17.5px }
+
+.sidebar-toggle { transition: background-color .3s, color .3s }
+.sidebar-toggle:hover { background-color: rgba(0,0,0,0.1) !important }
+
+.sidebar ul.sidebar-menu > li.active a,
+.sidebar ul.sidebar-menu > li a:hover,
+.sidebar ul.sidebar-menu > li a {
+  border-radius: 7px !important;
+  border-left: none !important;
+  background-color: #00000000 !important;
+  transition: 
+    opacity .5s,
+    color .6s;
+  padding: 7.5px 5px 7.5px 10.25px !important;
+  margin-bottom: 5px;
+  border: hsla(0,0%,100%,0) solid 1px
+}
+.sidebar ul.sidebar-menu > li.active a { 
+  color: var(--J) !important;
+  opacity: 1;
+  background-color: #ffffff10 !important;
+  border: hsla(0,0%,100%,.1) solid 1px !important
+}
+.sidebar ul.sidebar-menu > li a:hover { opacity: .9 }
+.sidebar ul.sidebar-menu > li a { opacity: .7 }
+
+
+tag[red]   { background-color: var(--D) !important }
+tag[green] { background-color: var(--F) !important }
+tag[blue]  { background-color: var(--I) !important }
+
+.box-header, .box-body, .box-footer { background: var(--R) !important }
+
+.box-header.with-border { border-bottom: none !important }
+.box-footer             { border-top:    none !important }
+hr                      { border:        none !important }
+
+.box             { border-top-color: var(--B);            }
+.box.box-primary { border-top-color: var(--J) !important; }
+.box.box-info    { border-top-color: var(--L) !important; }
+.box.box-warning { border-top-color: var(--H) !important; }
+.box.box-danger  { border-top-color: var(--D) !important; }
+.box.box-success { border-top-color: var(--F) !important; }
+
+.info-box                  { background: var(--A) !important; border-radius: 13px; overflow: hidden; height: 90px !important; }
+.info-box > .info-box-icon { background: var(--B) !important; border-radius: 13px; }
+.info-box > .info-box-content > .progress { display: none }
+
+.box, .nav-tabs-custom, .alert {
+  background: none !important;
+  background-color: var(--R) !important;
+  box-shadow: none !important;
+  padding: 10px !important;
+  border-radius: 17px;
+  transition: background .5s, background-color .5s;
+  border-left: hsla(0,0%,100%,.1) solid 1px !important;
+  border-right: hsla(0,0%,100%,.1) solid 1px !important;
+  border-bottom: hsla(0,0%,100%,.1) solid 1px !important;
+}
+.nav-tabs-custom, .alert { border-top: hsla(0,0%,100%,.1) solid 1px !important }
+
+.alert               { background-color: var(--R)    !important; border-color: var(--B); padding: 20px !important }
+.alert.alert-primary { background-color: #489dff1f !important; border-color: var(--J) !important;               }
+.alert.alert-info    { background-color: #48ffb91f !important; border-color: var(--L) !important;               }
+.alert.alert-warning { background-color: #ffbf4834 !important; border-color: var(--H) !important;               }
+.alert.alert-danger  { background-color: #ff484833 !important; border-color: var(--D) !important;               }
+.alert.alert-success { background-color: #48ff701c !important; border-color: var(--F) !important;               }
+
+.alert > *, .alert { color: #cecdcf !important }
+
+.label { 
+  background-color: var(--B) !important;
+  color: var(--FG) !important;
+  font-size: 90%;
+  padding: .2em .5em .1em .5em;
+  border-radius: 30px !important;
+}
+
+.label.label-primary { background-color: var(--J) !important; color: var(--BG) !important }
+.label.label-info    { background-color: var(--L) !important; color: var(--BG) !important }
+.label.label-warning { background-color: var(--D) !important; color: var(--BG) !important }
+.label.label-danger  { background-color: var(--C) !important; color: var(--FG) !important }
+.label.label-success { background-color: var(--F) !important; color: var(--BG) !important }
+
+.btn {
+  border-radius: 9px !important;
+  box-shadow: none;
+  border: none;
+  transition: border .3s ease-out, background-color .375s ease-in !important;
+}
+.btn-group > .btn { margin: 3.5px 7px }
+
+.btn:active,
+.btn.active { border: hsla(0,0%,100%,.25) solid 1px !important }
+.btn:hover  { border: hsla(0,0%,100%,.2) solid 1px !important }
+.btn        { border: hsla(0,0%,100%,.1) solid 1px !important }
+
+
+
+.btn.btn-primary        { background-color: #489dff1f !important; }
+.btn.btn-primary:hover  { background-color: #489dff3b !important; }
+.btn.btn-primary:active { background-color: #489dff52 !important; }
+.btn.btn-primary.active { background-color: #489dff52 !important; }
+
+.btn.btn-danger        { background-color: #ff484833 !important; }
+.btn.btn-danger:hover  { background-color: #ff48484b !important; }
+.btn.btn-danger:active { background-color: #ff484863 !important; }
+.btn.btn-danger.active { background-color: #ff484863 !important; }
+
+.btn.btn-warning        { background-color: #ffbf4828 !important; }
+.btn.btn-warning:hover  { background-color: #ffbf4834 !important; }
+.btn.btn-warning:active { background-color: #ffbf4852 !important; }
+.btn.btn-warning.active { background-color: #ffbf4852 !important; }
+
+.btn.btn-success        { background-color: #48ff701c !important; }
+.btn.btn-success:hover  { background-color: #48ff702c !important; }
+.btn.btn-success:active { background-color: #48ff7041 !important; }
+.btn.btn-success.active { background-color: #48ff7041 !important; }
+
+.btn.btn-info        { background-color: #48ffb91f !important; }
+.btn.btn-info:hover  { background-color: #48ffb32a !important; }
+.btn.btn-info:active { background-color: #48ffb944 !important; }
+.btn.btn-info.active { background-color: #48ffb944 !important; }
+
+.btn.btn-gray        { background-color: #282a2e !important; }
+.btn.btn-gray:hover  { background-color: #373b42 !important; }
+.btn.btn-gray:active { background-color: #464b55 !important; }
+.btn.btn-gray.active { background-color: #464b55 !important; }
+
+.btn.btn-gray-alt        { background-color: #282a2e !important; }
+.btn.btn-gray-alt:hover  { background-color: #373b42 !important; }
+.btn.btn-gray-alt:active { background-color: #464b55 !important; }
+.btn.btn-gray-alt.active { background-color: #464b55 !important; }
+
+.btn.extension-btn        { background-color: #18181b !important; }
+.btn.extension-btn:hover  { background-color: #1e1e22 !important; }
+.btn.extension-btn:active { background-color: #242429 !important; }
+.btn.extension-btn.active { background-color: #242429 !important; }
+
+
+input.form-control,
+select.form-control,
+textarea.form-control,
+.select2-container--default .select2-selection--single,
+.select2-selection--multiple,
+.select2-dropdown,
+.select2-search__field,
+.select2-results__option,
+.nebula-reset-container,
+div.box-tools.search01 form div.input-group.input-group-sm div.input-group-btn button.btn.btn-default,
+.select2-selection__choice,
+.input-group > .input-group-addon {
+  background-color: var(--A) !important;
+  border-color: hsla(0,0%,100%,.1) !important;
+
+  --border-radius-1: 7.5px;
+  --border-radius-2: 7.5px;
+  --border-radius-3: 7.5px;
+  --border-radius-4: 7.5px;
+  border-top-left-radius: var(--border-radius-1) !important;
+  border-top-right-radius: var(--border-radius-2) !important;
+  border-bottom-left-radius: var(--border-radius-3) !important;
+  border-bottom-right-radius: var(--border-radius-4) !important;
+}
+.select2-selection--multiple { background-color: var(--A) !important }
+.select2-container--default.select2-container--focus .select2-selection--multiple, .select2-container--default .select2-search--dropdown .select2-search__field { border-color: hsla(0,0%,100%,.07) !important }
+.select2-dropdown { margin-top: 10px; border-color: hsla(0,0%,100%,.2) !important; box-shadow: 0px 0px 30px black; }
+.select2-search__field,
+.select2-selection__choice { 
+  background-color: #444950 !important;
+  border: none !important;
+  --border-radius-1: 5px !important;
+  --border-radius-2: 5px !important;
+  --border-radius-3: 5px !important;
+  --border-radius-4: 5px !important;
+}
+.select2-selection--multiple ul li input.select2-search__field { background-color: unset !important }
+.select2-results__option { 
+  background-color: var(--B) !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  color: #ffffff50 !important;
+  --border-radius-1: 5px !important;
+  --border-radius-2: 5px !important;
+  --border-radius-3: 5px !important;
+  --border-radius-4: 5px !important;
+}
+.select2-results__option[aria-selected="true"] { background-color: var(--I) !important; color: white !important }
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  background-color: var(--BG) !important;
+  color: var(--B) !important;
+  border-color: hsla(0,0%,100%,.07) !important;
+}
+.nebula-input-with-reset,
+.input-group .form-control { --border-radius-1: 7.5px !important; --border-radius-2: 0px !important; --border-radius-3: 7.5px !important; --border-radius-4: 0px !important; }
+.nebula-reset-container,
+div.box-tools.search01 form div.input-group.input-group-sm div.input-group-btn button.btn.btn-default,
+.input-group > .input-group-addon { --border-radius-1: 0px !important; --border-radius-2: 7.5px !important; --border-radius-3: 0px !important; --border-radius-4: 7.5px !important; }
+div.box-tools.search01 form div.input-group.input-group-sm div.input-group-btn a { margin-left: 10px; }
+div.box-tools.search01 { width: 40% }
+@media (max-width: 767px) {
+  div.box-tools.search01 { width: 100% }
+}
+.radio label::before { background-color: unset !important }
+
+ul.nav.nav-tabs li,
+ul.nav.nav-tabs li a,
+ul.nav.nav-tabs li.active,
+ul.nav.nav-tabs li.active a {
+  border-radius: 7px !important;
+  border: none !important;
+}
+
+ul.nav.nav-tabs li.active a { background-color: var(--A) !important; }
+ul.nav.nav-tabs li.active { border: hsla(0,0%,100%,.2) 1px solid !important; }
+
+.box-body {
+  border-radius: 7px !important;
+  margin-top: 5px;
+}
+.box-body.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td  { border-top: 0px !important; border-bottom: 0px !important }
+
+.table-hover > tbody > tr       { transition: background-color .4s }
+.table-hover > tbody > tr:hover { background-color: var(--A) }
+
+.table-responsive {
+  border: none !important
+}
+
+.content-header > .breadcrumb {
+  background: none !important;
+  background-color: #00000000 !important;
+  padding: 0 !important;
+  opacity: .5
+}
+
+a { color: var(--I) }
+a:hover { color: var(--J) }
+
+code, pre { background-color: var(--A); border: none; }
+
+tr > td.text-center.left-icon > .fa-heartbeat,
+tr > td.text-center.left-icon > .fa-heart-o {
+  animation: none !important;
+  -webkit-animation: none !important;
+}
+tr > td.text-center.left-icon > .fa-heartbeat,
+tr > td.text-center > .fa-lock { color: var(--F) !important; }
+tr > td.text-center.left-icon > .fa-heart-o,
+tr > td.text-center > .fa-unlock { color: var(--D) !important; }
+
+div.small-box.bg-gray,
+div.small-box.bg-blue,
+div.small-box.bg-yellow {
+  background-color: var(--A) !important;
+  border-radius: 10px;
+  border: hsla(0,0%,100%,.1) 1px solid !important;
+}
+div.small-box.bg-gray > div.icon i::before {
+  font-size: 45px !important;
+  color: var(--B);
+  transition: color .4s;
+}
+.small-box:hover .icon i::before { color: #ffffff41 !important }
+
+.modal-header,
+.modal-body,
+.modal-footer,
+.modal-dialog,
+.modal-content {
+  background-color: var(--BG) !important;
+  border-radius: 14px !important;
+  border-color: transparent !important;
+}
+.close, .close:focus, .close:hover { 
+  color: var(--FG) !important;
+  text-shadow: none !important;
+  opacity: .5 !important;
+}
+
+.ace-chrome {
+  color: white !important;
+  background-color: var(--A) !important;
+  border-radius: 7.5px;
+}
+.ace-chrome .ace_gutter {
+  background-color: var(--B) !important;
+  color: white !important;
+}
+.ace-chrome .ace_gutter-active-line {
+  background-color: var(--A) !important;
+}
+#editor_install {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: hsla(0,0%,100%,.1) 1px solid !important;
+}
+
+div.notification {
+  background-color: var(--BG) !important;
+  border-radius: 14px;
+}
+
+
+div.col-xs-6.col-sm-3.text-center > a[href*="https://discord.gg/"] button.btn.btn-warning[style="width:100%;"],
+div.col-xs-6.col-sm-3.text-center > a[href*="https://pterodactyl."] button.btn.btn-primary[style="width:100%;"],
+div.col-xs-6.col-sm-3.text-center > a[href*="https://github.com/pterodactyl"] button.btn.btn-primary[style="width:100%;"],
+div.col-xs-6.col-sm-3.text-center > a[href*="https://github.com/"] button.btn.btn-success[style="width:100%;"] {
+  color: var(--FG) !important;
+  background-color: #18181b !important;
+  border: hsla(0,0%,100%,.1) solid 1px !important
+}
+div.col-xs-6.col-sm-3.text-center > a[href*="https://discord.gg/"] button.btn.btn-warning[style="width:100%;"]:hover,
+div.col-xs-6.col-sm-3.text-center > a[href*="https://pterodactyl."] button.btn.btn-primary[style="width:100%;"]:hover,
+div.col-xs-6.col-sm-3.text-center > a[href*="https://github.com/pterodactyl"] button.btn.btn-primary[style="width:100%;"]:hover,
+div.col-xs-6.col-sm-3.text-center > a[href*="https://github.com/"] button.btn.btn-success[style="width:100%;"]:hover {
+  color: var(--FG) !important;
+  background-color: #1e1e22 !important;
+  border: hsla(0,0%,100%,.2) solid 1px !important
+}
+div.col-xs-6.col-sm-3.text-center > a[href*="https://discord.gg/"] button.btn.btn-warning[style="width:100%;"]:active,
+div.col-xs-6.col-sm-3.text-center > a[href*="https://pterodactyl."] button.btn.btn-primary[style="width:100%;"]:active,
+div.col-xs-6.col-sm-3.text-center > a[href*="https://github.com/pterodactyl"] button.btn.btn-primary[style="width:100%;"]:active,
+div.col-xs-6.col-sm-3.text-center > a[href*="https://github.com/"] button.btn.btn-success[style="width:100%;"]:active {
+  color: var(--FG) !important;
+  background-color: #242429 !important;
+  border: hsla(0,0%,100%,.25) solid 1px !important
+}
+
+div.col-xs-6.col-sm-3.text-center > a[href*="https://discord.gg/"] button.btn.btn-warning[style="width:100%;"] i::before { content: "\F300" !important; font-family: "bootstrap-icons" !important }
+div.col-xs-6.col-sm-3.text-center > a[href*="https://pterodactyl."] button.btn.btn-primary[style="width:100%;"] i::before { content: "\F444" !important; font-family: "bootstrap-icons" !important }
+div.col-xs-6.col-sm-3.text-center > a[href*="https://github.com/pterodactyl"] button.btn.btn-primary[style="width:100%;"] i::before { content: "\F3ED" !important; font-family: "bootstrap-icons" !important }
+div.col-xs-6.col-sm-3.text-center > a[href*="https://github.com/"] button.btn.btn-success[style="width:100%;"] i::before { content: "\F772" !important; font-family: "bootstrap-icons" !important }
