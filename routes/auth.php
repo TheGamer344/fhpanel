@@ -39,6 +39,10 @@ Route::middleware(['throttle:authentication'])->group(function () {
 // is created).
 Route::post('/password/reset', Auth\ResetPasswordController::class)->name('auth.reset-password');
 
+    // Register routes
+    Route::get('/register', [Auth\RegisterController::class, 'index'])->name('auth.register');
+    Route::post('/register', [Auth\RegisterController::class, 'register'])->middleware('recaptcha');
+
 // Remove the guest middleware and apply the authenticated middleware to this endpoint,
 // so it cannot be used unless you're already logged in.
 Route::post('/logout', [Auth\LoginController::class, 'logout'])
