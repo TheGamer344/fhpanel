@@ -1,7 +1,8 @@
 import React from 'react';
 import NavigationBar from '@/components/NavigationBar';
 import SubNavigation from '@/components/elements/SubNavigation';
-import { useLocation } from 'react-router';
+import { useLocation, Route } from 'react-router-dom'; // Ensure Route is imported correctly
+import FreeServersContainer from '@/components/dashboard/freeservers/FreeServersContainer';
 
 import { NavigationLinks, NavigationRouter } from '@/blueprint/extends/routers/DashboardRouter';
 import BeforeSubNavigation                   from '@/blueprint/components/Navigation/SubNavigation/BeforeSubNavigation';
@@ -25,6 +26,9 @@ export default () => {
                 </SubNavigation>
             )}
             <NavigationRouter />
+            
+            {/* Adding Route for FreeServersContainer */}
+            <Route path={'/freeservers'} exact component={FreeServersContainer} />
         </>
     );
 };
