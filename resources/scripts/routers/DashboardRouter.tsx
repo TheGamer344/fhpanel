@@ -1,29 +1,21 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import NavigationBar from '@/components/NavigationBar';
 import SubNavigation from '@/components/elements/SubNavigation';
-import { useLocation, Route, useHistory } from 'react-router-dom'; // Import useHistory for navigation
-import FreeServersContainer from '@/components/dashboard/freeservers/FreeServersContainer';
+import { useLocation } from 'react-router';
 
 import { NavigationLinks, NavigationRouter } from '@/blueprint/extends/routers/DashboardRouter';
-import BeforeSubNavigation                   from '@/blueprint/components/Navigation/SubNavigation/BeforeSubNavigation';
-import AdditionalAccountItems                from '@/blueprint/components/Navigation/SubNavigation/AdditionalAccountItems';
-import AfterSubNavigation                    from '@/blueprint/components/Navigation/SubNavigation/AfterSubNavigation';
+import BeforeSubNavigation from '@/blueprint/components/Navigation/SubNavigation/BeforeSubNavigation';
+import AdditionalAccountItems from '@/blueprint/components/Navigation/SubNavigation/AdditionalAccountItems';
+import AfterSubNavigation from '@/blueprint/components/Navigation/SubNavigation/AfterSubNavigation';
+
+import FreeServersContainer from '@/components/dashboard/freeservers/FreeServersContainer';
 
 export default () => {
     const location = useLocation();
-    const history = useHistory(); // Hook to access history object
-
-    const handleRedirect = () => {
-        history.push('/freeservers'); // Redirect to /freeservers
-    };
 
     return (
         <>
-            {/* Button at the top that redirects to /freeservers */}
-            <button onClick={handleRedirect} style={{ margin: '10px' }}>
-                Get a Free Server
-            </button>
-
             <NavigationBar />
             {location.pathname.startsWith('/account') && (
                 <SubNavigation id={'SubNavigation'}>
@@ -35,10 +27,14 @@ export default () => {
                     <AfterSubNavigation />
                 </SubNavigation>
             )}
-            <NavigationRouter />
             
-            {/* Route for FreeServersContainer */}
-            <Route path={'/freeservers'} exact component={FreeServersContainer} />
+            <Switch>
+                {/* Route for FreeServersContainer */}
+                <Route path="/freeservers" exact component={FreeServersContainer} />
+                
+                {/* Other routes */}
+                <Route path="/" component={NavigationRouter} />
+            </Switch>
         </>
     );
 };
