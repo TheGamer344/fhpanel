@@ -68,7 +68,7 @@ class Kernel extends HttpKernel
             VerifyCsrfToken::class,
             SubstituteBindings::class,
             LanguageMiddleware::class,
-            UpdateLastLoggedIn::class,
+            UpdateLastLoginMiddleware::class,
         ],
         'api' => [
             EnsureStatefulRequests::class,
