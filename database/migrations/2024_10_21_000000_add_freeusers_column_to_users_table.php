@@ -14,7 +14,7 @@ class AddFreeusersColumnToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('freeusers')->default(0)->after('updated_at');
+            $table->integer('freeusers')->default(1)->after('updated_at');
         });
     }
 
