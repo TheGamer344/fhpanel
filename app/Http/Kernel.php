@@ -33,7 +33,7 @@ use Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull;
 use Pterodactyl\Http\Middleware\Api\Client\SubstituteClientBindings;
 use Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance;
 use Pterodactyl\Http\Middleware\Api\Application\AuthenticateApplicationUser;
-use Pterodactyl\Http\Middleware\UpdateLastLoggedIn;
+use Pterodactyl\Http\Middleware\UpdateLastLoginMiddleware;
 
 class Kernel extends HttpKernel
 {
