@@ -131,7 +131,7 @@ class FreeServersController extends ClientApiController
 
         try {
             $server = $this->serverCreationService->handle([
-                'name' => Auth::user()->name_first . '\'s Test Server',
+                'name' => Auth::user()->name_first . '\'s Free Server',
                 'description' => '',
                 'owner_id' => Auth::user()->id,
                 'node_id' => $node[0]->id,
