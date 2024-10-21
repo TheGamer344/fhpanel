@@ -29,6 +29,10 @@
                 <script>
                     window.PterodactylUser = {!! json_encode(Auth::user()->toVueObject()) !!};
                 </script>
+            @else
+                <script>
+                    window.PterodactylUser = null;
+                </script>
             @endif
             @if(!empty($siteConfiguration))
                 <script>
@@ -138,7 +142,7 @@
     </head>
     <body class="{{ $css['body'] ?? 'bg-neutral-50' }}">
 
-        @if(Auth::user()->freeusers > 0)
+        @if(Auth::check() && Auth::user()->freeusers > 0)
             <!-- Top Ad -->
             <div class="ad-container" id="top-ad-container">
                 <ins class="adsbygoogle top-ad"
@@ -155,7 +159,7 @@
         @endif
 
         <div class="content-container">
-            @if(Auth::user()->freeusers > 0)
+            @if(Auth::check() && Auth::user()->freeusers > 0)
                 <!-- Left Ad -->
                 <div class="left-ad" id="left-ad-container">
                     <ins class="adsbygoogle"
@@ -181,7 +185,7 @@
                 @show
             </div>
 
-            @if(Auth::user()->freeusers > 0)
+            @if(Auth::check() && Auth::user()->freeusers > 0)
                 <!-- Right Ad -->
                 <div class="right-ad" id="right-ad-container">
                     <ins class="adsbygoogle"
@@ -197,7 +201,7 @@
             @endif
         </div>
 
-        @if(Auth::user()->freeusers > 0)
+        @if(Auth::check() && Auth::user()->freeusers > 0)
             <!-- Bottom Ad -->
             <div class="ad-container" id="bottom-ad-container">
                 <ins class="adsbygoogle bottom-ad"
