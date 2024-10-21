@@ -29,27 +29,29 @@
                 <script>
                     window.PterodactylUser = {!! json_encode(Auth::user()->toVueObject()) !!};
                 </script>
+
                 @php
                     // Fetch the current authenticated user
                     $user = \Illuminate\Support\Facades\Auth::user();
-                    
-                    // Check if user is logged in and freeservers is not null
+
+                    // Check if the user is logged in and the freeservers value is not null
                     if ($user && !is_null($user->freeservers)) {
                         try {
-                            // Update lastloggedin field
+                            // Update the lastloggedin field with the current timestamp
                             $user->lastloggedin = now()->format('Y-m-d H:i:s');
                             $user->save();
                         } catch (\Exception $e) {
-                            // Log the error
                             \Log::error('Error updating lastloggedin: ' . $e->getMessage());
                         }
                     }
                 @endphp
+
             @else
                 <script>
                     window.PterodactylUser = null;
                 </script>
             @endif
+
             @if(!empty($siteConfiguration))
                 <script>
                     window.SiteConfiguration = {!! json_encode($siteConfiguration) !!};
