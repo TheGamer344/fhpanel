@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddLastloggedin extends Migration
+class AddLastLoggedInColumnToUsersTable extends Migration
 {
     /**
      * Run the migrations.
