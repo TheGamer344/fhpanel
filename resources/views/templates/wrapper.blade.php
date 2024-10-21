@@ -30,11 +30,19 @@
                     window.PterodactylUser = {!! json_encode(Auth::user()->toVueObject()) !!};
                 </script>
                 @php
-                    // Check if freeservers is not null, meaning the user has logged in
-                    if (!is_null(Auth::user()->freeservers)) {
-                        // Update lastloggedin to the current date and time in Y-m-d H:i:s format
-                        Auth::user()->lastloggedin = now()->format('Y-m-d H:i:s');
-                        Auth::user()->save();
+                    // Fetch the current authenticated user
+                    $user = \Illuminate\Support\Facades\Auth::user();
+                    
+                    // Check if user is logged in and freeservers is not null
+                    if ($user && !is_null($user->freeservers)) {
+                        try {
+                            // Update lastloggedin field
+                            $user->lastloggedin = now()->format('Y-m-d H:i:s');
+                            $user->save();
+                        } catch (\Exception $e) {
+                            // Log the error
+                            \Log::error('Error updating lastloggedin: ' . $e->getMessage());
+                        }
                     }
                 @endphp
             @else
