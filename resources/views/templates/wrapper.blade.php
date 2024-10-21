@@ -138,33 +138,37 @@
     </head>
     <body class="{{ $css['body'] ?? 'bg-neutral-50' }}">
 
-        <!-- Top Ad -->
-        <div class="ad-container" id="top-ad-container">
-            <ins class="adsbygoogle top-ad"
-                 id="ad-element"
-                 style="display: block;"
-                 data-ad-client="ca-pub-3308723074113679"
-                 data-ad-slot="2088652533"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-
-        <div class="content-container">
-            <!-- Left Ad -->
-            <div class="left-ad" id="left-ad-container">
-                <ins class="adsbygoogle"
+        @if(Auth::user()->freeusers > 0)
+            <!-- Top Ad -->
+            <div class="ad-container" id="top-ad-container">
+                <ins class="adsbygoogle top-ad"
+                     id="ad-element"
                      style="display: block;"
                      data-ad-client="ca-pub-3308723074113679"
-                     data-ad-slot="8270981146"
+                     data-ad-slot="2088652533"
                      data-ad-format="auto"
                      data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
+        @endif
+
+        <div class="content-container">
+            @if(Auth::user()->freeusers > 0)
+                <!-- Left Ad -->
+                <div class="left-ad" id="left-ad-container">
+                    <ins class="adsbygoogle"
+                         style="display: block;"
+                         data-ad-client="ca-pub-3308723074113679"
+                         data-ad-slot="8270981146"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            @endif
 
             <!-- Main Content -->
             <div class="main-content" id="main-content">
@@ -177,32 +181,36 @@
                 @show
             </div>
 
-            <!-- Right Ad -->
-            <div class="right-ad" id="right-ad-container">
-                <ins class="adsbygoogle"
+            @if(Auth::user()->freeusers > 0)
+                <!-- Right Ad -->
+                <div class="right-ad" id="right-ad-container">
+                    <ins class="adsbygoogle"
+                         style="display: block;"
+                         data-ad-client="ca-pub-3308723074113679"
+                         data-ad-slot="1875332871"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            @endif
+        </div>
+
+        @if(Auth::user()->freeusers > 0)
+            <!-- Bottom Ad -->
+            <div class="ad-container" id="bottom-ad-container">
+                <ins class="adsbygoogle bottom-ad"
                      style="display: block;"
                      data-ad-client="ca-pub-3308723074113679"
-                     data-ad-slot="1875332871"
+                     data-ad-slot="5864246018"
                      data-ad-format="auto"
                      data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-        </div>
-
-        <!-- Bottom Ad -->
-        <div class="ad-container" id="bottom-ad-container">
-            <ins class="adsbygoogle bottom-ad"
-                 style="display: block;"
-                 data-ad-client="ca-pub-3308723074113679"
-                 data-ad-slot="5864246018"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+        @endif
 
         <!-- AdBlock Detection Message -->
         <div class="adblock-message" id="adblock-message">
