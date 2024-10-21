@@ -109,4 +109,3 @@ class Kernel extends HttpKernel
         'updateLastLoggedIn' => UpdateLastLoginMiddleware::class,
     ];
 }
-zz
