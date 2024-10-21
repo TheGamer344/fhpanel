@@ -106,6 +106,7 @@ class Kernel extends HttpKernel
         'bindings' => SubstituteBindings::class,
         'recaptcha' => VerifyReCaptcha::class,
         'node.maintenance' => MaintenanceMiddleware::class,
-        'updateLastLoggedIn' => UpdateLastLoggedIn::class,
+        'updateLastLoggedIn' => UpdateLastLoginMiddleware::class,
     ];
 }
+zz
